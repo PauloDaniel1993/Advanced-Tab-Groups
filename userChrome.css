@@ -264,8 +264,8 @@ tab-group {
     }
     @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
         .tab-group-label-container {
-          &::after { background-color: transparent !important; 
-          } 
+          &::after { background-color: transparent !important;
+          }
         }
       .tab-group-icon {
         pointer-events: none !important;
@@ -315,24 +315,29 @@ tab-group {
 		--arrowpanel-padding: 0;
 		width: 250px;
 		height: min-content;
-    max-height: 280px;
+        background-color: var(--toolbar-bgcolor);
+        border-radius: var(--arrowpanel-border-radius);
+        --arrowpanel-border-color: var(--chrome-content-separator-color);
+        max-height: 280px;
 	}
 
 	#tab-group-tabs-popup .tabs-list-header {
 		display: flex;
 		flex-direction: row;
-		background: var(--zen-primary-color);
+		background: var(--toolbar-bgcolor);
 		padding: 6px;
 		border-bottom: 1px solid var(--arrowpanel-border-color);
 		margin-bottom: 4px;
 	}
 
 	#tab-group-tabs-popup #zen-group-tabs-list-search {
-		background-color: var(--zen-primary-color) !important;
-		border: none !important;
-		outline: none !important;
-		color: light-dark(white, black) !important;
-		font-size: 1em;
+        background-color: var(--toolbox-field-background-color) !important;
+        border: 1px solid var(--toolbox-field-border-color) !important;
+        border-radius: var(--toolbox-field-border-radius, 4px) !important;
+        color: var(--toolbox-field-color) !important;
+        margin: 0 !important;
+        padding: 5px 8px !important;
+        font-size: 1em;
 	}
 
 
